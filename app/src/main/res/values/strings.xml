@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Loja Virtual</string>
+    <string name="categorias_populares">Categorias Populares</string>
+    <string name="produtos_recentes">Produtos Recentes</string>
+    <string name="titulo_do_produto_details">Titulo do Produto</string>
+    <string name="btn_comprar">Comprar</string>
+    <string name="descricao_do_produto">Descrição do Produto</string>
+</resources>
