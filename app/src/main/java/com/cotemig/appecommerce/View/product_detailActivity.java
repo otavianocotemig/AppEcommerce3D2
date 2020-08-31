@@ -1,4 +1,4 @@
-package com.cotemig.appecommerce;
+package com.cotemig.appecommerce.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.cotemig.appecommerce.R;
 
 public class product_detailActivity extends AppCompatActivity {
 

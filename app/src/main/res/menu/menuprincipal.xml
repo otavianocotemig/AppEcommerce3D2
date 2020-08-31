@@ -4,11 +4,6 @@
 
     <group android:id="@+id/menu_logado">
 
-        <item android:id="@+id/action_search"
-            android:icon="@drawable/ic_action_search"
-            android:title="Pesquisa"
-            app:showAsAction="always"/>
-
         <item android:id="@+id/action_share"
             android:title="Share"
             android:icon="@drawable/ic_action_share"
@@ -20,8 +15,8 @@
         <item android:title="Produtos Recentes"
             android:id="@+id/action_ProdutosRecentes"/>
 
-        <item android:title="Sair"
-            android:id="@+id/action_sair"/>
+        <item android:title="Produtos - Cadastro"
+            android:id="@+id/action_CadProdutos"/>
     </group>
 
 </menu>

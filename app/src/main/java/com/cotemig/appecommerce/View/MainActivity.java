@@ -1,4 +1,4 @@
-package com.cotemig.appecommerce;
+package com.cotemig.appecommerce.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.cotemig.appecommerce.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     // Instanciar a classe ViewHoler
@@ -44,8 +46,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_search){
-            Toast.makeText(this,"Você clicou no Search",Toast.LENGTH_LONG).show();
+        if (id == R.id.action_CadProdutos){
+            Intent acessoTelaProdutos = new Intent(this,CadastroProdutos.class);
+            startActivity(acessoTelaProdutos);
+
+
         }else if (id == R.id.action_ProdutosRecentes){
             Intent acessoTelaDetailsProducts = new Intent(this,product_detailActivity.class);
             startActivity(acessoTelaDetailsProducts);
