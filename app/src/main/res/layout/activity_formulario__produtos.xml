@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Formulario_Produtos">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe o Nome do Produto"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:id="@+id/editText_NomeProd"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe a Descrição do Produto"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:id="@+id/editText_Descricao"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Informe a Quantidade Produto"
+        android:inputType="numberSigned"
+        android:id="@+id/editText_Quantidade"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe o Preço do Produto"
+        android:layout_margin="5dp"
+        android:inputType="numberSigned"
+        android:id="@+id/editText_Preco"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="botao"
+        android:id="@+id/btn_Produto"/>
+
+
+</LinearLayout>
