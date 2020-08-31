@@ -1,10 +1,14 @@
 package com.cotemig.appecommerce;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 public class product_detailActivity extends AppCompatActivity {
 
@@ -14,13 +18,22 @@ public class product_detailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_product_detail);
     }
 
-
-    // Código utilizado para manipular menu de opções na activity
-    // metodo do app que invoca o menu de opções
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menuproduto,menu);
-        return super.onCreateOptionsMenu(menu);
+        inflater.inflate(R.menu.menuproduto, menu);
+        return true;
+    }
+
+    // metodo do APP que executa o que foi selecionado no menu de opções
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.act_search){
+            Toast.makeText(this,"Você clicou no Search",Toast.LENGTH_LONG).show();
+        }else if (id == R.id.act_share){
+            Toast.makeText(this,"Você clicou no Share",Toast.LENGTH_LONG).show();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
